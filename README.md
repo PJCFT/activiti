@@ -203,12 +203,16 @@ public class ActivitiDataSourceConfig {
 
 ```
 ### (4) 项目启动及效果
-
+启动成功
+![image](https://github.com/PJCFT/pic/blob/master/asset/activiti/02.jpg)
+此时我们的activiti数据库就已经自动帮我们生成了对应的数据表，一共是25张。
+![image](https://github.com/PJCFT/pic/blob/master/asset/activiti/01.jpg)
+这样SpringBoot就已经简单的进行整合成功了。
 
 ## 1.2 SpringBoot 基于Activiti进行多数据源配置
 
 ### (1) 配置数据源配置信息
-        在pom文件中添加如下数据源信息
+在pom文件中添加如下数据源信息
 ```
 #默认数据源配置
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
@@ -281,6 +285,8 @@ public class MysqlDataSourceConfig {
 ```
 
 ### (3) 项目启动
+项目启动成功:
+![image](https://github.com/PJCFT/pic/blob/master/asset/activiti/01.jpg)
 
 ## 1.3 SpringBoot 整合Mybatis
 
@@ -455,3 +461,7 @@ public class BookController {
 @SpringBootApplication(scanBasePackages = "com.pjcft")
 ```
 ### (9) 项目启动及效果
+项目启动成功：
+![image](https://github.com/PJCFT/pic/blob/master/asset/activiti/01.jpg)  
+进行Mybatis整合并验证多数据是否成功：
+![image](https://github.com/PJCFT/pic/blob/master/asset/activiti/03.jpg)
